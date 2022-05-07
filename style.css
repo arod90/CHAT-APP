@@ -24,6 +24,24 @@ html {
   scroll-behavior: smooth;
 }
 
+.gbc {
+
+}
+
+.py {
+  position: absolute;
+  left: 12.3%;
+  top: 27.5%;
+  width: 5.5vw;
+}
+
+.gc{
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  width: 20vw;
+}
+
 .container {
   margin: 20px;
   display: flex;
@@ -70,6 +88,7 @@ html {
   max-width: 75%;
   padding: 8px;
   border-radius: 25px;
+  margin-bottom: 15px;
   float: left;
   text-align:left;
   background-color: greenyellow;
@@ -81,6 +100,7 @@ html {
 
 .user {
   max-width: 60%;
+  display: inline-block;
   min-width: 30%;
   padding: 12px;
   display: block;
@@ -179,8 +199,8 @@ html {
 .fire4 {
   height: 50px;
   position:absolute;
-  top: 36%;
-  left: 71%;
+  top: 32%;
+  left: 66%;
   z-index: 10;
   display: none;
   transform: rotate(95deg);

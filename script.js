@@ -17,8 +17,9 @@ class Message {
     event.preventDefault()
     var usermsg = $('#usermsg').val();
     let textMes = new Message('Andres y/o Xavi', usermsg);
-    let append = $(`<div class="user">- ${textMes.text}<br/><br/>${textMes.author} -- ⌛ ${textMes.time}</div><br/>`)
-    $(".thread").append(append);
+    let append = $(`<div class="msgcont"><div class="user">- ${textMes.text}<br/><br/>${textMes.author} -- ⌛ ${textMes.time}</div><br/>`)
+    $(".thread").append(append)
+    // append.show('slow');
     // setTimeout(function() {
       getQuote()
     // },)
@@ -56,9 +57,10 @@ function getQuote(){
       $(".smoke2" ).css("display", "block");
     }
     let botMes = new Message(data.result.author, data.result.text);
-    let appendbot = $(`<div class="msgcont"><div class="robot">- ${botMes.text}<br/><br/>${botMes.author} -- ⌛ ${botMes.time}</div></div><br/><br/>`)
+    let appendbot = $(`<div class="msgcont"><div class="robot">- ${botMes.text}<br/><br/>${botMes.author} -- ⌛ ${botMes.time}</div><br/><br/>`)
     $(".thread").append(appendbot)
-    $(".thread").scrollTop(99999);
+    // appendbot.show('slow')
+    $(".thread").scrollTop(999999);
     $("#count").html(count);
   }})};
 
