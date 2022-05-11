@@ -111,6 +111,29 @@ function getQuote(){
     if (fire == 100){
       $(".bigfire1" ).css("display", "block");
     }
+    if (fire == 101){
+      $(".ui" ).css("background", "linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 5%, rgba(255,255,255,1) 10%)");
+    }
+    if (fire == 102){
+      $(".ui" ).css("background", "linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 10%, rgba(255,255,255,1) 20%)");
+    }
+    if (fire == 103){
+      $(".ui" ).css("background", "linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 12%, rgba(255,255,255,1) 30%)");
+    }
+    if (fire == 104){
+      $(".ui" ).css("background", "linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 15%, rgba(255,255,255,1) 50%)");
+    }
+    if (fire == 105){
+      $(".ui" ).css("background", "linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 20%, rgba(255,255,255,1) 70%)");
+    }
+    if (fire == 106){
+      $(".ui" ).css("background", "linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 24%, rgba(255,255,255,1) 85%)");
+    }
+    if (fire == 107){
+      $(".ui" ).css("background", "linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 27%, rgba(255,255,255,1) 100%)");
+    }
+    // background: rgb(255,1,1);
+    // background: linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 27%, rgba(255,255,255,1) 100%);
     let botMes = new Message(data.result.author, data.result.text);
     postMessage(botMes);
     let appendbot = $(
