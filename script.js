@@ -84,6 +84,18 @@ function getQuote(){
     if (fire == 75){
       $(".smoke2" ).css("display", "block");
     }
+    if (fire == 85 ){
+      $(".spark" ).css("display", "block");
+      setTimeout(function() {
+        $(".spark" ).remove();
+      }, 800);
+    }
+    if (fire == 88 ){
+      $(".spark" ).css("display", "block");
+      setTimeout(function() {
+        $(".spark" ).remove();
+      }, 800);
+    }
     if (fire == 90){
       $(".robogif" ).toggleClass('box-rotate');
     }
@@ -93,6 +105,12 @@ function getQuote(){
         $(".spark" ).remove();
       }, 800);
     }
+    if (fire == 1 ){
+      $(".spark1" ).css("display", "block");
+      setTimeout(function() {
+        $(".spark1" ).remove();
+      }, 800);
+    }
     if (fire == 92 ){
       $(".spark1" ).css("display", "block");
       setTimeout(function() {
@@ -100,6 +118,12 @@ function getQuote(){
       }, 800);
     }
     if (fire == 95 ){
+      $(".spark2" ).css("display", "block");
+      setTimeout(function() {
+        $(".spark2" ).remove();
+      }, 800);
+    }
+    if (fire == 96 ){
       $(".spark2" ).css("display", "block");
       setTimeout(function() {
         $(".spark2" ).remove();
