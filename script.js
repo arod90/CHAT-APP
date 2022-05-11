@@ -105,12 +105,6 @@ function getQuote(){
         $(".spark" ).remove();
       }, 800);
     }
-    if (fire == 91 ){
-      $(".spark1" ).css("display", "block");
-      setTimeout(function() {
-        $(".spark1" ).remove();
-      }, 800);
-    }
     if (fire == 92 ){
       $(".spark1" ).css("display", "block");
       setTimeout(function() {
