@@ -68,12 +68,22 @@ function getQuote(){
       $(".smoke" ).css("display", "block");
       $(".fire2" ).css("display", "block");
     }
+    if (fire == 31){
+      $(".title1" ).toggleClass("title1-tilt");
+    }
+    if (fire == 35){
+      $(".title2" ).toggleClass("title2-tilt");
+    }
+    if (fire == 36){
+      $(".tear" ).css("display", "block");
+    }
     if (fire == 40){
       $(".smoke1" ).css("display", "block");
       $(".fire3" ).css("display", "block");
     }
-    if (fire == 50){
+    if (fire == 45){
       $(".fire4" ).css("display", "block");
+      // $(".robogif" ).toggleClass('box-rotate360');
     }
     if (fire == 60){
       $(".fire5" ).css("display", "block");
@@ -84,20 +94,9 @@ function getQuote(){
     if (fire == 75){
       $(".smoke2" ).css("display", "block");
     }
-    if (fire == 85 ){
-      $(".spark" ).css("display", "block");
-      setTimeout(function() {
-        $(".spark" ).remove();
-      }, 800);
-    }
-    if (fire == 88 ){
-      $(".spark" ).css("display", "block");
-      setTimeout(function() {
-        $(".spark" ).remove();
-      }, 800);
-    }
     if (fire == 90){
       $(".robogif" ).toggleClass('box-rotate');
+      $(".tear" ).css("display", "none");
     }
     if (fire == 90 ){
       $(".spark" ).css("display", "block");
@@ -147,11 +146,35 @@ function getQuote(){
     if (fire == 106){
       $(".ui" ).css("background", "linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 24%, rgba(255,255,255,1) 85%)");
     }
+    // if (fire > 106){
+    //   $(".user" ).css("background", "rgb(255, 247, 0)");
+    // }
+    // if (fire > 106){
+    //   $(".user" ).css("color", "black");
+    // }
+    // if (fire > 106){
+    //   $(".robot" ).css("background", "rgb(255, 102, 0)");
+    // }
     if (fire == 107){
       $(".ui" ).css("background", "linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 27%, rgba(255,255,255,1) 100%)");
     }
-    // background: rgb(255,1,1);
-    // background: linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 27%, rgba(255,255,255,1) 100%);
+    if (fire == 108){
+      $(".inputfield" ).css("background", "linear-gradient(0deg, rgba(255,255,201,1) 0%, rgba(253,196,29,1) 50%, rgba(252,69,69,1) 100%)");
+    }
+    if (fire == 109){
+      $(".inputfield" ).css("background", "linear-gradient(0deg, rgba(255,255,201,1) 0%, rgba(253,196,29,1) 45%, rgba(252,69,69,1) 90%)");
+    }
+    if (fire == 110){
+      $(".inputfield" ).css("background", "linear-gradient(0deg, rgba(255,255,201,1) 0%, rgba(253,196,29,1) 40%, rgba(252,69,69,1) 80%)");
+    }
+    if (fire == 111){
+      $(".inputfield" ).css("background", "linear-gradient(0deg, rgba(255,255,201,1) 0%, rgba(253,196,29,1) 35%, rgba(252,69,69,1) 75%)");
+    }
+    if (fire == 112){
+      $(".inputfield" ).css("background", "linear-gradient(0deg, rgba(255,255,201,1) 0%, rgba(253,196,29,1) 30%, rgba(252,69,69,1) 70%)");
+    }
+    // background: rgb(255,255,201);
+    // background: linear-gradient(0deg, rgba(255,255,201,1) 0%, rgba(253,196,29,1) 50%, rgba(252,69,69,1) 100%);
     let botMes = new Message(data.result.author, data.result.text);
     postMessage(botMes);
     let appendbot = $(

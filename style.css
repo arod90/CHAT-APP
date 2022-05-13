@@ -24,10 +24,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.gbc {
-
-}
-
 .py {
   position: absolute;
   left: 12.3%;
@@ -148,6 +144,12 @@ html {
   .useless {
     display: none;
   }
+  .ui {
+    width: 70%;
+  }
+  .inputfield {
+    width: 90%;
+  }
 }
 
 .count{
@@ -171,21 +173,21 @@ html {
 .fire {
   height: 50px;
   position:absolute;
-  top: -10%;
+  top: -9%;
   left: 50%;
   display: none;
 }
 .fire1 {
   height: 50px;
   position:absolute;
-  top: -10%;
+  top: -9%;
   left: 43%;
   display: none;
 }
 .fire2 {
   height: 50px;
   position:absolute;
-  top: -10%;
+  top: -9%;
   left: 56%;
   display: none;
 }
@@ -193,7 +195,7 @@ html {
 .fire3 {
   height: 50px;
   position:absolute;
-  top: -10%;
+  top: -9%;
   left: 25%;
   display: none;
 }
@@ -211,11 +213,11 @@ html {
 .fire5 {
   height: 50px;
   position:absolute;
-  top: 21%;
+  top: 23%;
   left: 63%;
   z-index: 9;
   display: none;
-  transform: rotate(10deg);
+  transform: rotate(15deg);
 } 
 
 .fire6 {
@@ -261,7 +263,17 @@ html {
   transition: transform 0.2s linear;
   transform-origin: bottom left;
   transform-style: preserve-3D;
-  margin-right: 25px;
+  margin-right: 45px;
+}
+
+.tear {
+  position: absolute;
+  height: 15px;
+  top: 35.5%;
+  left: 29%;
+  z-index: 10;
+  transform: rotate(10deg);
+  display: none;
 }
 
 .spark {
@@ -275,7 +287,7 @@ html {
 .spark1 {
   height: 90px;
   position: absolute;
-  left: -10%;
+  left: -2%;
   top: 20%;
   z-index: 10;
   display: none;
@@ -285,13 +297,41 @@ html {
   height: 90px;
   position: absolute;
   top: 20%;
-  left: -4%;
+  left: 4%;
   z-index: 10;
   display: none;
 }
 
 .box-rotate {
   transform: rotate(-90deg);
+}
+
+.box-rotate360 {
+  transform: rotate(-360deg);
+}
+
+.titlecont {
+  line-height: 100%;
+  width: 95%;
+}
+
+.title1 {
+  transition: transform 0.2s linear;
+  transform-origin: bottom left;
+  transform-style: preserve-3D;
+}
+
+.title2 {
+  transition: transform 0.2s linear;
+  transform-origin: bottom left;
+  transform-style: preserve-3D;
+}
+
+.title1-tilt {
+  transform: rotate(10deg);
+}
+.title2-tilt {
+  transform: rotate(20deg);
 }
 
 .fall {   
@@ -309,7 +349,7 @@ html {
 .bigfire {
   height: 120px;
   position: absolute;
-  left: -12%;
+  left: 2%;
   top: 16.9%;
   z-index: 10;
   display: none;
@@ -318,22 +358,11 @@ html {
 .bigfire1 {
   height: 120px;
   position: absolute;
-  left: -6%;
+  left: -2%;
   top: 12.9%;
   z-index: 0;
   display: none;
 }
-
-
-/* .inputfield::before {
-  content: '';
-  background-image: url(../images/robot.gif);
-  background-repeat: no-repeat;
-  width: 80px;
-  height: 80px;
-  background-color: #e22d2a;
-  display: block;
-} */
 
 
 .inputfield {
@@ -348,7 +377,12 @@ html {
 
 @media screen and (max-width: 760px) {
   .inputfield {
-    width: 75%;
+    width: 60vw; 
+  }
+}
+@media screen and (max-width: 960px) {
+  .inputfield {
+    width: 60vw; 
   }
 }
 
@@ -360,6 +394,12 @@ button{
   cursor: pointer;
   font-size: 4;
   width: 30%;
+}
+
+@media screen and (max-width: 720px) {
+  button {
+    width: 60% !important;
+  }
 }
 
 input {
@@ -408,6 +448,7 @@ input {
   overflow: hidden;
   box-shadow: 0 5px 5px #193047;
   border-radius: 4px;
+  margin-right: 20px;
 }
 
 .button:hover {
@@ -485,12 +526,33 @@ input {
 
 .button2:focus { outline:0; }
 
-.input {
-  /* -webkit-animation: breathing 5s ease-out infinite normal;
-  animation: breathing 5s ease-out infinite normal;
-  -webkit-font-smoothing: antialiased; */
-  }
+.megatron::after {
+  background-image: url('./images/axbut.png'), url(./images/onpix.png);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: '';
+  border: 1px solid teal;
+  width: 3.2vw;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
 
+.megatron {
+  position: absolute;
+  border: 1px solid red;
+  max-width: fit-content;
+  height: fit-content;
+  left: 4vw;
+  top: 20vh;
+  display: none;
+}
+
+.megatronimg {
+  width: 15vw;
+  /* display: none; */
+}
 
 @-webkit-keyframes breathing {
 0% {
