@@ -390,7 +390,12 @@ html {
     width: 90%;
   }
   .inputfield {
-    width: 85%;
+    width: 89%;
+    height: fit-content;
+  }
+  button{
+    height: 7vh !important;
+    width: 100%;
   }
 }
 
