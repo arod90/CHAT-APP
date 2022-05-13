@@ -385,6 +385,14 @@ html {
     width: 60vw; 
   }
 }
+@media screen and (max-width: 491px) {
+  .ui {
+    width: 90%;
+  }
+  .inputfield {
+    width: 85%;
+  }
+}
 
 button{
   border: none;
