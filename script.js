@@ -85,6 +85,9 @@ function getQuote(){
       $(".fire4" ).css("display", "block");
       // $(".robogif" ).toggleClass('box-rotate360');
     }
+    if (fire == 50){
+      $(".megatronimg").attr("src","images/glitchscreen.gif");
+    }
     if (fire == 60){
       $(".fire5" ).css("display", "block");
     }
@@ -141,6 +144,9 @@ function getQuote(){
       $(".ui" ).css("background", "linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 15%, rgba(255,255,255,1) 50%)");
     }
     if (fire == 105){
+      $(".megatronimg").attr("src","images/bobfire2.webp");
+    }
+    if (fire == 105){
       $(".ui" ).css("background", "linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 20%, rgba(255,255,255,1) 70%)");
     }
     if (fire == 106){
@@ -173,8 +179,6 @@ function getQuote(){
     if (fire == 112){
       $(".inputfield" ).css("background", "linear-gradient(0deg, rgba(255,255,201,1) 0%, rgba(253,196,29,1) 30%, rgba(252,69,69,1) 70%)");
     }
-    // background: rgb(255,255,201);
-    // background: linear-gradient(0deg, rgba(255,255,201,1) 0%, rgba(253,196,29,1) 50%, rgba(252,69,69,1) 100%);
     let botMes = new Message(data.result.author, data.result.text);
     postMessage(botMes);
     let appendbot = $(

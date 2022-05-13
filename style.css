@@ -57,8 +57,12 @@ html {
   background: linear-gradient(360deg, rgba(255,1,1,1) 0%, rgba(255,190,0,1) 27%, rgba(255,255,255,1) 100%); */
   margin-bottom: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 18px;
-
 }
+
+.thread::-webkit-scrollbar {
+  display: none;
+}
+
 @media screen and (max-width: 760px) {
   .ui {
     width: 75%;
@@ -144,6 +148,9 @@ html {
   .useless {
     display: none;
   }
+  .megatronimg{
+    display: none;
+  }
   .ui {
     width: 70%;
   }
@@ -162,7 +169,7 @@ html {
   text-align: right;
   width: 7vw;
   height: 6.5vh;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .countcont {
@@ -203,7 +210,7 @@ html {
 .fire4 {
   height: 50px;
   position:absolute;
-  top: 32%;
+  top: 35%;
   left: 66%;
   z-index: 9;
   display: none;
@@ -213,7 +220,7 @@ html {
 .fire5 {
   height: 50px;
   position:absolute;
-  top: 23%;
+  top: 27%;
   left: 63%;
   z-index: 9;
   display: none;
@@ -223,7 +230,7 @@ html {
 .fire6 {
   height: 50px;
   position:absolute;
-  top: 22%;
+  top: 26%;
   left: 52%;
   z-index: 9;
   display: none;
@@ -247,7 +254,7 @@ html {
 .smoke2 {
   height: 50px;
   position: absolute;
-  top: 19%;
+  top: 22%;
   left: 58%;
   display: none;
 }
@@ -315,6 +322,7 @@ html {
   width: 95%;
 }
 
+
 .title1 {
   transition: transform 0.2s linear;
   transform-origin: bottom left;
@@ -341,6 +349,9 @@ html {
 };
 
 @media screen and (max-width: 960px) {
+  .inputfield {
+    width: 60vw; 
+  }
   .count {
     display: none;
   }
@@ -380,11 +391,14 @@ html {
     width: 60vw; 
   }
 }
-@media screen and (max-width: 960px) {
+/* @media screen and (max-width: 960px) {
   .inputfield {
     width: 60vw; 
   }
-}
+  .count {
+    display: none;
+  }
+} */
 @media screen and (max-width: 491px) {
   .ui {
     width: 90%;
@@ -545,26 +559,52 @@ input {
   background-repeat: no-repeat;
   background-size: 100%;
   content: '';
-  border: 1px solid teal;
+  background-color: #1d1e1f;
   width: 3.2vw;
-  height: 100%;
+  height: 98.4%;
   position: absolute;
   z-index: -1;
 }
 
+.megabanner {
+  font-family: 'VT323', monospace;
+  color: #d5dfe4;
+  font-size: 2vw;
+  position: absolute;
+  top: 8vw;
+  margin-left: 8vw;
+  letter-spacing: 5px;
+  z-index: 10;
+}
+
+/* megatron::before{
+  content: 'MEGRATON';
+  width: 3.2vw;
+  height: 98.4%;
+  position: absolute;
+  color: white;
+  z-index: 1;
+} */
+
+
+
 .megatron {
   position: absolute;
-  border: 1px solid red;
   max-width: fit-content;
   height: fit-content;
   left: 4vw;
   top: 20vh;
-  display: none;
+  border-top: 5px solid #1d1e1f;
+  border-width: 10px;
+  /* display: none; */
 }
 
 .megatronimg {
-  width: 15vw;
-  /* display: none; */
+  border-top: 45px solid #1d1e1f;
+  width: 14vw;
+  height: fit-content;
+  border-bottom: 25px solid #1d1e1f;
+  border-left: 15px solid #1d1e1f;
 }
 
 @-webkit-keyframes breathing {
